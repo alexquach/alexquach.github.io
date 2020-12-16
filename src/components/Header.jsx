@@ -4,17 +4,8 @@ import Anime from "react-anime"
 import { StyledHeader, Nav, NavItem, NavList, NavLink, logoStyle, ScrollLinkStyle } from "./styles"
 import logo from "../images/Pentagon_overrounded.svg"
 import "animate.css/animate.min.css";
-import ScrollAnimation from "react-animate-on-scroll";
 import { Link as ScrollLink, animateScroll } from "react-scroll";
 import { useScrollPosition } from "./small_comps/scrollPosition"
-
-// const [scrolledUp, setScrolledUp] = useState(false)
-
-// useScrollPosition(({ prevPos, currPos }) => {
-//     const activateScrolledUp = currPos.y = 0 && prevPos > 0
-//     if (activateScrolledUp) setScrolledUp(activateScrolledUp)
-//   }
-// , [scrolledUp])
 
 const Header = () => {
 

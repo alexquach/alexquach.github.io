@@ -1,13 +1,20 @@
-import * as React from "react"
+import React, { useState, useEffect } from 'react';
 import HomeTemplate from "../home"
+import Loader from "../components/Loader"
 
 // markup
 const IndexPage = () => {
+  const [isLoading, setIsLoading] = useState(true);
+
   return (
-    <main>
-      <title>Home Page</title>
-      <HomeTemplate/>
-    </main>
+    <div style={{backgroundColor: "black"}}>
+      {isLoading ? (
+        <Loader finishLoading={() => setIsLoading(false)} />
+      ) : (
+          <HomeTemplate />
+        )
+      }
+    </div>
   )
 }
 

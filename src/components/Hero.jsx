@@ -28,6 +28,7 @@ const Hero = ({ imageAlt, id }) => {
         <StyledHeroText>
           <Typist
             avgTypingDelay={1}
+            startDelay={1000}
             cursor={{
               hideWhenDone: true,
               hideWhenDoneDelay: 0
@@ -36,7 +37,7 @@ const Hero = ({ imageAlt, id }) => {
             Hi. I'm Alex
         </Typist>
           <Typist
-            startDelay={2000}
+            startDelay={3000}
             avgTypingDelay={0}>
             Computer&nbsp;Scientist
           <Typist.Delay ms={100} /> | Data&nbsp;Scientist

@@ -7,10 +7,9 @@ import { ThemeProvider } from "theme-ui";
 import theme from "./gatsby-plugin-theme-ui";
 import { Layout, Styled } from "theme-ui";
 import { Header, Hero, Section, Footer, Experience } from "./components";
-import { SectionWrap } from "./components/styles";
+import { SectionWrap, StyledHome } from "./components/styles";
 import "animate.css/animate.min.css";
 import ScrollAnimation from "react-animate-on-scroll";
-
 
 
 const HomeTemplate = () => {
@@ -52,7 +51,7 @@ const HomeTemplate = () => {
 
   return (
     <ThemeProvider theme={theme}>
-      <Layout>
+      <StyledHome>
 
         <Helmet>
           <html lang={siteLanguage} />
@@ -106,7 +105,7 @@ const HomeTemplate = () => {
 
         </SectionWrap>
         <Footer />
-      </Layout>
+      </StyledHome>
     </ThemeProvider>
   )
 }

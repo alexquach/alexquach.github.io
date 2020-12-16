@@ -15,7 +15,7 @@ export default {
     // primary: "#53388a",
     // secondary: "#fd97fd",
     tertiary: "#FFF500",
-    background: "#6e6d6d",
+    background: "#000",
     // background: "#53388a",
     muted: "#f6f6f6",
   },

@@ -3,6 +3,54 @@ import { keyframes, css } from "@emotion/core"
 import theme from "../gatsby-plugin-theme-ui"
 import dots from "./small_comps/logo.svg"
 
+export const StyledHome = styled.div`
+  animation: fadeIn ease 2s;
+  -webkit-animation: fadeIn ease 2s;
+  -moz-animation: fadeIn ease 2s;
+  -o-animation: fadeIn ease 2s;
+  -ms-animation: fadeIn ease 2s;
+  }
+  @keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+  }
+
+  @-moz-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+  }
+
+  @-webkit-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+  }
+
+  @-o-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+  }
+
+  @-ms-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+`
+
+export const StyledLoader = styled.div`
+  width: 100%;
+  height: 100vh;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  svg {
+    opacity: 0;
+    height: 50%;
+    max-height: 50%
+    max-width: 50%
+  }
+`
+
 export const StyledHeader = styled.header`
   display: flex;
   align-items: center;

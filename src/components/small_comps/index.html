@@ -1,0 +1,66 @@
+ 
+    <!DOCTYPE html>
+      <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+      <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+      <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+      <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+      <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Lazy Line Painter</title>
+        <meta name="description" content="A modern JS library for SVG path animation">
+
+        <!-- css  -->
+        <style>
+
+          body, html {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top:0;
+            left:0;
+            margin: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          }
+
+            #Layer4 {
+              width: 70vw;
+              height: 70vh;
+              position: relative;
+              overflow: visible;
+            }
+        </style>
+     
+        <!-- Include lazylinepainter -->
+        <script src="lazy-line-painter-1.9.6.min.js"></script>
+
+        <script type="text/javascript">
+
+          (function(){ 
+
+            document.onreadystatechange = () => {
+
+              if (document.readyState === 'complete') {
+                        
+                /**
+                 * Setup your Lazy Line element.
+                 * see README file for more settings
+                 */
+
+                let el = document.querySelector('#Layer4(2)');
+                let myAnimation = new LazyLinePainter(el, {"ease":"easeInCubic","strokeWidth":1,"strokeOpacity":1,"strokeColor":"#222F3D","strokeCap":"square"}); 
+                myAnimation.paint(); 
+              }
+            }
+
+          })();
+
+        </script>
+      </head>
+
+      <body>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 943.92 902.15" data-llp-composed="true" id="Layer4(2)" class="lazy-line-painter"><defs><style>.cls-1{fill:none;stroke:#231f20;stroke-miterlimit:10;stroke-width:8px;}</style></defs><g id="Layer_2" data-name="Layer 2"><g id="Layer_4" data-name="Layer 4"><path class="cls-1" d="M496.23,11.27c-13.35-9.69-35.19-9.69-48.54,0L20.7,321.5C7.35,331.2.6,352,5.7,367.66l163.1,502c5.1,15.69,22.77,28.53,39.27,28.53H735.85c16.5,0,34.17-12.84,39.27-28.53l163.1-502c5.1-15.69-1.65-36.46-15-46.16L560.32,57.84,511.78,22.57Z" data-llp-id="Layer4(2)-0" data-llp-duration="710" data-llp-delay="0" fill-opacity="0" style=""/><path class="cls-1" d="M536.05,40.2,182.72,296.91c-13.35,9.7-20.1,30.47-15,46.17L284,700.92c5.1,15.7,22.77,28.54,39.27,28.54H653.7" data-llp-id="Layer4(2)-1" data-llp-duration="710" data-llp-delay="710" fill-opacity="0" style=""/><path class="cls-1" d="M681,898.15l141.24-434.7c5.1-15.69-1.65-36.47-15-46.16L473.48,174.8" data-llp-id="Layer4(2)-2" data-llp-duration="710" data-llp-delay="1420" fill-opacity="0" style=""/><line class="cls-1" x1="473.48" y1="174.8" x2="181.88" y2="386.66" data-llp-id="Layer4(2)-3" data-llp-duration="710" data-llp-delay="2130" fill-opacity="0" style=""/><line class="cls-1" x1="64.32" y1="289.81" x2="235.39" y2="814.45" data-llp-id="Layer4(2)-4" data-llp-duration="710" data-llp-delay="2840" fill-opacity="0" style=""/><path class="cls-1" d="M150.87,814.45H596.08c16.5,0,34.17-12.84,39.27-28.53L765.08,386.66" data-llp-id="Layer4(2)-5" data-llp-duration="710" data-llp-delay="3550" fill-opacity="0" style=""/><path class="cls-1" d="M922.94,414.67,557.4,149.09c-13.35-9.69-35.19-9.69-48.54,0L473.48,174.8" data-llp-id="Layer4(2)-6" data-llp-duration="710" data-llp-delay="4260" fill-opacity="0" style=""/></g></g></svg>
+      </body>
+    </html>
