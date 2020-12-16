@@ -1,0 +1,26 @@
+{
+  "1": {
+    "logo": "./something",
+    "company": "Microsoft",
+    "position_name": "PM Intern",
+    "description": "Azure Machine Learning"
+  },
+  "2": {
+    "logo": "./something",
+    "company": "Botkeeper",
+    "position_name": "PM Intern",
+    "description": "Azure Machine Learning"
+  },
+  "3": {
+    "logo": "./something",
+    "company": "HUCP",
+    "position_name": "PM Intern",
+    "description": "Azure Machine Learning"
+  },
+  "4": {
+    "logo": "./something",
+    "company": "MIT Quest for Intelligence",
+    "position_name": "PM Intern",
+    "description": "Azure Machine Learning"
+  }
+}

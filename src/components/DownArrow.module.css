@@ -1,0 +1,87 @@
+@keyframes scrollDown {
+    from {
+          height: 0;
+          opacity: 0;
+          transform: translateY(-100px);
+    }
+  
+    to {
+          height: 50px;
+          opacity: 1;
+          transform: translateY(50px);
+    }
+  }
+  
+  .downArrowLine {
+      height: 0px;
+      width: 1px;
+      top: 0;
+      left: 49%;
+      background-color: #fff;
+      position: absolute;
+      -webkit-transition: all 1s ease-in;
+      transition: all 1s ease-in;
+      opacity: 0;
+  }
+  .downArrowLineanimated {
+      animation: scrollDown .7s 1;
+  }
+  .scrollDownArrow {
+    height: 35px;
+    width: 30px;
+    margin: auto;
+    margin-top: 10px;
+    left: 50%;
+    opacity: 0;
+    position: absolute;
+    bottom: 200px;
+    -webkit-transition: all 1.0s;
+    transition: all 1.0s;
+    transform: translateX(-50%);
+    z-index: auto;
+    cursor: pointer;
+  }
+  .arrowLines {
+    height: 3px;
+    width: 15px;
+    top: 50%;
+    background-color: #fff;
+    position: absolute;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+  .arrowLineshover {
+    height: 3px;
+    width: 13px;
+    top: 50%;
+    background-color: #fff;
+    position: absolute;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+  .arrowLines.darkArrow {
+    background-color: #999;
+  }
+  .scrollDownArrow.dark > .arrowLines {
+      background-color: #000;
+  }
+  .arrowLines1 {
+    transform: rotate(-225deg);
+    margin-left: -2.5px;
+    left: 50%;
+  }
+  .arrowLines2 {
+    transform: rotate(225deg);
+    margin-right: -2.5px;
+    right: 50%;
+  }
+  .arrowLines1hovered {
+    transform: rotate(-45deg);
+    margin-left: -2px;
+    left: 50%;
+  }
+  .arrowLines2hovered {
+    transform: rotate(45deg);
+    margin-right: -2px;
+    right: 50%;
+  }

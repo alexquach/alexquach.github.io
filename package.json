@@ -2,27 +2,54 @@
   "name": "alex-quach-s-personal-website",
   "version": "1.0.0",
   "private": true,
-  "description": "Alex Quach's Personal Website",
+  "description": "Alex Quach's Personal Website build with Gatsby.js",
   "keywords": [
     "gatsby"
   ],
   "scripts": {
-    "develop": "gatsby develop",
-    "start": "gatsby develop",
     "build": "gatsby build",
+    "develop": "gatsby develop",
+    "deploy": "gatsby build --prefix-paths && gh-pages -d public",
+    "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
+    "start": "npm run develop",
     "serve": "gatsby serve",
-    "clean": "gatsby clean"
+    "clean": "gatsby clean",
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
   },
   "license": "0BSD",
   "dependencies": {
-    "@emotion/react": "^11.1.2",
-    "@emotion/styled": "^11.0.0",
-    "gatsby": "^2.26.1",
-    "gatsby-plugin-emotion": "^5.1.0",
+    "@emotion/core": "^10.0.35",
+    "@material-ui/core": "^4.11.0",
+    "@material-ui/icons": "^4.9.1",
+    "@material-ui/lab": "^4.0.0-alpha.56",
+    "animate.css": "^4.1.1",
+    "gatsby": "^2.24.66",
+    "gatsby-plugin-emotion": "^4.3.12",
     "gatsby-plugin-google-analytics": "^2.8.0",
-    "gatsby-plugin-react-helmet": "^3.7.0",
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1",
-    "react-helmet": "^6.1.0"
+    "gatsby-plugin-typography": "^2.5.12",
+    "gatsby-source-filesystem": "^2.3.32",
+    "gatsby-theme-scarlet": "^1.2.0",
+    "gatsby-transformer-json": "^2.4.13",
+    "jquery": "^3.5.1",
+    "pathseg": "^1.2.0",
+    "react": "^16.12.0",
+    "react-animate-on-scroll": "^2.1.5",
+    "react-anime": "^3.0.3",
+    "react-dom": "^16.12.0",
+    "react-particles-js": "^3.3.0",
+    "react-scroll": "^1.8.1",
+    "react-typist": "^2.0.5",
+    "react-typography": "^0.16.19",
+    "typography": "^0.16.19",
+    "typography-theme-fairy-gates": "^0.16.19",
+    "typography-theme-kirkham": "^0.16.19"
+  },
+  "devDependencies": {
+    "gh-pages": "^3.1.0",
+    "prettier": "2.1.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/alexquach/alexquach.github.io"
   }
 }
