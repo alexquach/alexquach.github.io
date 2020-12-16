@@ -2,13 +2,12 @@ import React from "react";
 import { css } from "@emotion/core"
 import Helmet from "react-helmet";
 import { graphql, useStaticQuery } from "gatsby";
-import { Global } from "@emotion/core";
 import { ThemeProvider } from "theme-ui";
 
 import theme from "./gatsby-plugin-theme-ui";
 import { Layout, Styled } from "theme-ui";
-import { Header, Hero, Section, Footer, Experience, DownArrow } from "./components";
-import { SectionWrap, ProjectList } from "./components/styles";
+import { Header, Hero, Section, Footer, Experience } from "./components";
+import { SectionWrap } from "./components/styles";
 import "animate.css/animate.min.css";
 import ScrollAnimation from "react-animate-on-scroll";
 
@@ -63,11 +62,9 @@ const HomeTemplate = () => {
         </Helmet>
 
         <Header logoTxt={siteLogoText} />
-        <div>
-          <canvas/>
-        </div>
+        <canvas/>
+
         <SectionWrap>
-          <div style={{height: "12.5vh"}}/>
           <Hero id="hero" />
 
           <Section backgroundColor={theme.colors.white} id="work">

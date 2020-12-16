@@ -6,7 +6,7 @@ import {
   ProjectContent,
   ProjectTitle,
   ProjectBadge,
-} from "./styles"
+} from "../styles"
 
 const ProjectItem = ({ link, image, alt, name, badge }) => {
   const [active, setActive] = useState(false)

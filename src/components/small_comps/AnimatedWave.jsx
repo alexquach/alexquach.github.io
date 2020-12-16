@@ -1,5 +1,5 @@
 import React from "react"
-import { WaveWrapper, InnerWave } from "./styles"
+import { WaveWrapper, InnerWave } from "../styles"
 
 const AnimatedWave = ({ enableWave = false, bottom = true }) => {
   return (

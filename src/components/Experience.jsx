@@ -2,7 +2,7 @@ import React from "react"
 import { graphql, useStaticQuery } from "gatsby"
 import { makeStyles } from '@material-ui/core/styles';
 import Timeline from '@material-ui/lab/Timeline';
-import ExperienceItem from './ExperienceItem'
+import ExperienceItem from './small_comps/ExperienceItem'
 
 
 import microsoftlogo from '../images/microsoftlogo.png';

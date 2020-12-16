@@ -6,7 +6,7 @@ import logo from "../images/Pentagon_overrounded.svg"
 import "animate.css/animate.min.css";
 import ScrollAnimation from "react-animate-on-scroll";
 import { Link as ScrollLink, animateScroll } from "react-scroll";
-import { useScrollPosition } from "./scrollPosition"
+import { useScrollPosition } from "./small_comps/scrollPosition"
 
 // const [scrolledUp, setScrolledUp] = useState(false)
 

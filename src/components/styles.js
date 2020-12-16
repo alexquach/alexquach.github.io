@@ -1,7 +1,7 @@
 import styled from "@emotion/styled"
 import { keyframes, css } from "@emotion/core"
 import theme from "../gatsby-plugin-theme-ui"
-import dots from "./logo.svg"
+import dots from "./small_comps/logo.svg"
 
 export const StyledHeader = styled.header`
   display: flex;
@@ -50,10 +50,6 @@ export const SectionWrap = styled.main`
 export const StyledHero = styled.section`
   scroll-snap-align: start;
   background-color: transparent;
-  // background: linear-gradient(
-  //   ${theme.colors.primary} 12.5vh,
-  //   ${theme.colors.secondary}
-  // );
   display: flex;
   align-items: center;
   justify-content: center;
