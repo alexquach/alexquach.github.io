@@ -1,26 +1,42 @@
 import React, { useState, useEffect } from 'react';
 import { StyledLoader } from './styles'
-
+import Helmet from "react-helmet";
 import Anime from "react-anime"
 import "animate.css/animate.min.css";
-import LazyLinePainter from 'lazy-line-painter'
+
+// import LazyLinePainter from 'lazy-line-painter'
 
 const Loader = ({ finishLoading }) => {
+
     const [logoSpin, setLogoSpin] = useState(0);
 
-    useEffect(() => {
-        let el = document.querySelector('#Pentagon_Loader');
-        el.style.opacity = 1;
-        setLogoSpin(1)
-        let myAnimation = new LazyLinePainter(el, { "ease": "easeInOutCubic", "strokeWidth": 8, "strokeOpacity": 1, "strokeColor": "#FFF", "strokeCap": "square" });
-        myAnimation.paint();
-
-        const timeout = setTimeout(() => finishLoading(true), 3000);
-        return () => clearTimeout(timeout);
-    }, []);
+    const somefunc = () => {
+        console.log(window.LazyLinePainter != undefined)
+        const timeout = setTimeout(() => {
+            console.log(window.LazyLinePainter != undefined)
+            if (window.LazyLinePainter != undefined) {
+                const LazyLinePainter = window.LazyLinePainter;
+                console.log(LazyLinePainter)
+                let el = document.querySelector('#Pentagon_Loader');
+                el.style.opacity = 1;
+                setLogoSpin(1)
+                let myAnimation = new LazyLinePainter(el, { "ease": "easeInOutCubic", "strokeWidth": 8, "strokeOpacity": 1, "strokeColor": "#FFF", "strokeCap": "square" });
+                myAnimation.paint();
+    
+                const timeout = setTimeout(() => finishLoading(true), 3000);
+                return () => clearTimeout(timeout);
+            }
+        }, 100);
+        
+    };
 
     return (
         <StyledLoader>
+            <Helmet
+                script={[{ src: "https://cdn.jsdelivr.net/npm/lazy-line-painter@1.9.4/lib/lazy-line-painter-1.9.4.min.js" }]}
+                // Helmet doesn't support `onload` in script objects so we have to hack in our own
+                onChangeClientState={() => somefunc()}
+            />
             <svg
                 viewBox="0 0 943.92 902.15"
                 data-llp-composed="true"
