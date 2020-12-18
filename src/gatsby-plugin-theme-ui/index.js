@@ -2,7 +2,7 @@ import "typeface-open-sans"
 import "typeface-pacifico"
 
 const systemFontStack =
-  '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol'
+  '-apple-system, BlinkMacSystemFont, "ColfaxAI", "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol'
 
 export default {
   // Global Theme Styles
@@ -20,8 +20,8 @@ export default {
     muted: "#f6f6f6",
   },
   fonts: {
-    heading: `${systemFontStack}`,
-    body: `'Open Sans', ${systemFontStack}`,
+    heading: `'Colfax', ${systemFontStack}`,
+    body: `'Colfax', ${systemFontStack}`,
   },
   fontSizes: [12, 14, 16, 18, 24, 28, 32, 36, 48, 64, 72],
   fontWeights: {

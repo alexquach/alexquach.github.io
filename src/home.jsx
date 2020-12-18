@@ -57,7 +57,7 @@ const HomeTemplate = () => {
           <html lang={siteLanguage} />
           <title>{siteTitle}</title>
           <meta name="Description" content={siteDescription} />
-          <script src="https://cdn.rawgit.com/progers/pathseg/master/pathseg.js"></script>
+          <link href="./globalstyles.css" rel="stylesheet"></link>
         </Helmet>
 
         <Header logoTxt={siteLogoText} />
