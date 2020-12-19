@@ -5,7 +5,6 @@ import { css } from "@emotion/core"
 import Typist from "react-typist"
 import "react-typist/dist/Typist.css"
 import { Link as ScrollLink } from "react-scroll";
-import Helmet from "react-helmet";
 
 import "./small_comps/metaballs.css"
 
@@ -19,11 +18,8 @@ const Hero = ({ imageAlt, id }) => {
 
   return (
     <span>
-      <div style={{ height: "12.5vh" }} />
+      <div style={{ height: "8vh" }} />
       <StyledHero id={id}>
-        <Helmet>
-          <script src="https://cdn.rawgit.com/progers/pathseg/master/pathseg.js"></script>
-        </Helmet>
 
         <StyledHeroText>
           <Typist
@@ -38,7 +34,8 @@ const Hero = ({ imageAlt, id }) => {
         </Typist>
           <Typist
             startDelay={3000}
-            avgTypingDelay={0}>
+            avgTypingDelay={0}
+            css={css`color: white;`}>
             Computer&nbsp;Scientist
           <Typist.Delay ms={100} /> | Data&nbsp;Scientist
           <Typist.Delay ms={100} /> | ML&nbsp;Engineer

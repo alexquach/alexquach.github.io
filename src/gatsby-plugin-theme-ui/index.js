@@ -9,7 +9,9 @@ export default {
   space: [0, 4, 8, 16, 32, 64, 128, 256, 512],
   colors: {
     light: "#FFF",
+    lightgrey: "rgb(251, 251, 253)",
     dark: "#1E272E",
+    black: "#000",
     primary: "#ff7171",
     secondary: "#ffaa71",
     // primary: "#53388a",
@@ -20,8 +22,8 @@ export default {
     muted: "#f6f6f6",
   },
   fonts: {
-    heading: `'Colfax', ${systemFontStack}`,
-    body: `'Colfax', ${systemFontStack}`,
+    heading: `'ColfaxAI', ${systemFontStack}`,
+    body: `'ColfaxAI', ${systemFontStack}`,
   },
   fontSizes: [12, 14, 16, 18, 24, 28, 32, 36, 48, 64, 72],
   fontWeights: {

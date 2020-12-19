@@ -34,7 +34,7 @@ const Experience = ({ role, company, description, logo, timeframe }) => {
           <span style={{ color: "white", backgroundColor: "white" }}>
             <TimelineDot variant="outlined" color="inherit">
               <Icon >
-                <img src={logo} />
+                <img src={logo} style={{width: "100%"}} />
               </Icon>
             </TimelineDot>
           </span>

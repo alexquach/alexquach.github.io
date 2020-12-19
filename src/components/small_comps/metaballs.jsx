@@ -65,11 +65,11 @@ float radius = metaball.z;
 sum += (radius * radius) / (dx * dx + dy * dy);
 }
 
-if (sum >= 0.995) {
-gl_FragColor = vec4(1.0, mix(vec3(x / WIDTH, y / HEIGHT, 1.0), vec3(0, 0, 1.0), max(0.0, 1.0 - (sum - 0.995) * 100.0)));
-return;
+if (sum >= 0.9) {
+  gl_FragColor = vec4(mix(vec4(1.0, x / WIDTH, y / HEIGHT, 1), vec4(1.0, x / WIDTH, y / HEIGHT, 0), max(0.5, 1.0 - (sum - 0.9) * 100.0)));
+  return;
 }
-
+  
 gl_FragColor = vec4(0, 0, 0, 1.0);
 }
 

@@ -3,7 +3,10 @@ import { graphql, useStaticQuery } from "gatsby"
 import { makeStyles } from '@material-ui/core/styles';
 import Timeline from '@material-ui/lab/Timeline';
 import ExperienceItem from './small_comps/ExperienceItem'
-
+import { Section } from "../components";
+import { css } from "@emotion/core"
+import ScrollAnimation from "react-animate-on-scroll";
+import theme from "../gatsby-plugin-theme-ui";
 
 import microsoftlogo from '../images/microsoftlogo.png';
 import botkeeperlogo from '../images/botkeeperlogo.png';
@@ -55,65 +58,71 @@ const Experience = ({
   const classes = useStyles();
 
   return (
-    <Timeline>
+    <Section backgroundColor={theme.colors.light} id="work">
+      <ScrollAnimation animateIn="animate__fadeInUp" duration={1} css={css`text-align: center`}>
+        <h1>Experience</h1>
+      </ScrollAnimation>
 
-      <ExperienceItem
-        company="Botkeeper"
-        timeframe="Fall 2020"
-        role="ML Engineer Intern"
-        description="Developing, Evaluating, and Deploying NLP"
-        logo={botkeeperlogo}
-      />
+      <Timeline>
+        <ExperienceItem
+          company="Botkeeper"
+          timeframe="Fall 2020"
+          role="ML Engineer Intern"
+          description="Developing, Evaluating, and Deploying NLP"
+          logo={botkeeperlogo}
+        />
 
-      <ExperienceItem
-        company="Cogo Labs"
-        timeframe="Fall 2020"
-        role="Data Analyst Intern"
-        description="Deriving Insights for large PE firm"
-        logo={cogolabslogo}
-      />
+        <ExperienceItem
+          company="Cogo Labs"
+          timeframe="Fall 2020"
+          role="Data Analyst Intern"
+          description="Deriving Insights for large PE firm"
+          logo={cogolabslogo}
+        />
 
-      <ExperienceItem
-        company="Harvard Undergraduate Capital Partners"
-        timeframe="Fall 2020"
-        role="Analyst"
-        description="Sourcing for ~50 VC/Angel investors"
-        logo={hucplogo}
-      />
+        <ExperienceItem
+          company="Harvard Undergraduate Capital Partners"
+          timeframe="Fall 2020"
+          role="Analyst"
+          description="Sourcing for ~50 VC/Angel investors"
+          logo={hucplogo}
+        />
 
-      <ExperienceItem
-        company="Microsoft"
-        timeframe="Summer 2020"
-        role="Product Manager Intern"
-        description="Cross-team collaboration in Azure Machine Learning"
-        logo={microsoftlogo}
-      />
+        <ExperienceItem
+          company="Microsoft"
+          timeframe="Summer 2020"
+          role="Product Manager Intern"
+          description="Cross-team collaboration in Azure Machine Learning"
+          logo={microsoftlogo}
+        />
 
-      <ExperienceItem
-        company="Botkeeper"
-        timeframe="Winter 2020"
-        role="Software Engineer Intern"
-        description="Automating QA Service"
-        logo={botkeeperlogo}
-      />
+        <ExperienceItem
+          company="Botkeeper"
+          timeframe="Winter 2020"
+          role="Software Engineer Intern"
+          description="Automating QA Service"
+          logo={botkeeperlogo}
+        />
 
-      <ExperienceItem
-        company="MIT Quest for Intelligence"
-        timeframe="Fall 2019"
-        role="Researcher"
-        description="Lowering Greenhouse Gas Emissions for MIT Facilities"
-        logo={mitlogo}
-      />
+        <ExperienceItem
+          company="MIT Quest for Intelligence"
+          timeframe="Fall 2019"
+          role="Researcher"
+          description="Lowering Greenhouse Gas Emissions for MIT Facilities"
+          logo={mitlogo}
+        />
 
-      <ExperienceItem
-        company="Microsoft"
-        timeframe="Summer 2019"
-        role="Explore (SWE+PM) Intern"
-        description="Release Dashboard for Azure Stack"
-        logo={microsoftlogo}
-      />
+        <ExperienceItem
+          company="Microsoft"
+          timeframe="Summer 2019"
+          role="Explore (SWE+PM) Intern"
+          description="Release Dashboard for Azure Stack"
+          logo={microsoftlogo}
+        />
 
-    </Timeline>
+      </Timeline>
+
+    </Section>
   );
 }
 

@@ -2,7 +2,7 @@ import { React, useState } from "react"
 import { Container, Styled } from "theme-ui"
 import Anime from "react-anime"
 import { StyledHeader, Nav, NavItem, NavList, NavLink, logoStyle, ScrollLinkStyle } from "./styles"
-import logo from "../images/Pentagon_overrounded.svg"
+import logo from "../images/Logo_Rounded.svg"
 import "animate.css/animate.min.css";
 import { Link as ScrollLink, animateScroll } from "react-scroll";
 import { useScrollPosition } from "./small_comps/scrollPosition"
@@ -25,14 +25,14 @@ const Header = () => {
     150
   )
 
-
   return (
     <StyledHeader>
       <Container style={{ maxWidth: 95 + "%" }}>
         <Nav>
           <div style={{
             flexDirection: "row", display: "flex",
-            alignItems: "center", flexWrap: "nowrap"
+            alignItems: "center", flexWrap: "nowrap",
+            marginTop: "1vh"
           }}
           >
 
@@ -65,12 +65,21 @@ const Header = () => {
 
           <NavList>
             <NavItem>
-              <ScrollLink css={ScrollLinkStyle} to={"work"} smooth={"easeInOutCubic"} offset={-100}>
+              <ScrollLink className="small-caps" css={ScrollLinkStyle} to="about" smooth={"easeInOutCubic"}>
+                About
+              </ScrollLink>
+            </NavItem>
+
+            <NavItem>
+              <ScrollLink className="small-caps" css={ScrollLinkStyle} to={"work"} smooth={"easeInOutCubic"} offset={-100}>
                 Experience
               </ScrollLink>
             </NavItem>
+
             <NavItem>
-              <ScrollLink css={ScrollLinkStyle} to="about" smooth={"easeInOutCubic"}>About</ScrollLink>
+              <ScrollLink className="small-caps" css={ScrollLinkStyle} to="projects" smooth={"easeInOutCubic"}>
+                Projects
+              </ScrollLink>
             </NavItem>
           </NavList>
         </Nav>
