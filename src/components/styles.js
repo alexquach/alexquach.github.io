@@ -2,6 +2,8 @@ import styled from "@emotion/styled"
 import { keyframes, css } from "@emotion/core"
 import theme from "../gatsby-plugin-theme-ui"
 
+import pattern from "./pattern.png"
+
 export const StyledHome = styled.div`
   animation: fadeIn ease 2s;
   -webkit-animation: fadeIn ease 2s;
@@ -214,6 +216,19 @@ export const StyledSection = styled.section`
     background: backgroundColor && backgroundColor,
     color: light ? theme.colors.light : theme.colors.dark,
   })}
+  &:before {
+    content: "";
+    ${({ pattern }) => ({
+    backgroundImage: pattern,
+    backgroundSize: "contain",
+    opacity: pattern ? 0.05 : 1,
+    position: "absolute",
+    top: "0px",
+    right: "0px",
+    bottom: "0px",
+    left: "0px",
+  })}
+  }
 `
 
 export const SplashImage = styled.img`
@@ -368,3 +383,11 @@ export const logoStyle = css`
   margin-top: auto;
   margin-bottom: auto;
   `
+
+export const StyledPattern = styled.div`
+${({ pattern }) => ({
+    backgroundImage: pattern,
+    backgroundSize: "contain",
+    opacity: pattern ? 0.25 : 1,
+  })}
+`

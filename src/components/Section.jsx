@@ -10,12 +10,14 @@ const Section = ({
   id,
   enableWave,
   waveBottom,
+  pattern,
 }) => {
   return (
     <StyledSection
       backgroundColor={backgroundColor}
       light={light || false}
       id={id}
+      pattern={pattern}
     >
       <Container>{children}</Container>
       <AnimatedWave enableWave={enableWave} bottom={waveBottom} />

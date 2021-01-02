@@ -6,33 +6,28 @@ import theme from "../gatsby-plugin-theme-ui";
 import { Styled } from "theme-ui";
 import ScrollAnimation from "react-animate-on-scroll";
 
+import pattern from "./pattern.png"
+
 const Projects = () => {
   return (
     <Section
-      backgroundColor={theme.colors.lightgrey}
+      // backgroundColor={theme.colors.lightgrey}
       id="projects"
       light={false}
       enableWave={false}
       waveBottom={false}
+      pattern={`url(${pattern})`}
     >
 
-      <ScrollAnimation animateIn="animate__fadeInUp" duration={1} css={css`text-align: center`}>
-        <h1>Projects</h1>
-      </ScrollAnimation>
-      <ScrollAnimation animateIn="animate__fadeInUp" duration={1} animateOnce={true}>
-        <Styled.p>Hey! I'm Alex, an undergraduate at MIT studying Computer Science.
-        As you might notice from my quite varied experience, I love trying new things
-        and am always looking to learn something!
-        <br /><br />
-        I try to get my hands dirty in many different areas: from full-stack web dev, to
-        data analytics, to product management, to deploying machine learning models.
-        I'm also passionate about Responsible AI as it pertains to making machine learning more transparent,
-        interpretable, safe, fair, private, and robust. I'm also interested in the entrepreneurship space,
-        where I'm getting involved in the vibrant Boston ecosystem as a potential founder and as a sourcing investor.
-        I hope to combine these two fields of interest in the future.
+        <ScrollAnimation animateIn="animate__fadeInUp" duration={1} css={css`text-align: center`}>
+          <h1>Projects</h1>
+        </ScrollAnimation>
+        <ScrollAnimation animateIn="animate__fadeInUp" duration={1} animateOnce={true}>
+          <Styled.p>Here are just a few public (👀) things that I can share. Hoping to do more open source stuff 💯
       </Styled.p>
+      CSN, Airtable, style transfer/generator
       </ScrollAnimation>
-      <div css={css`height: 75px`}></div>
+        <div css={css`height: 75px`}></div>
     </Section>
   )
 }

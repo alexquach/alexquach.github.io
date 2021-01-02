@@ -7,10 +7,9 @@ import { ThemeProvider } from "theme-ui";
 import theme from "./gatsby-plugin-theme-ui";
 import { Layout, Styled } from "theme-ui";
 import { Header, Hero, Footer, Experience, About, Projects } from "./components";
-import { SectionWrap, StyledHome } from "./components/styles";
+import { SectionWrap, StyledHome, StyledPattern } from "./components/styles";
 import "animate.css/animate.min.css";
 import ScrollAnimation from "react-animate-on-scroll";
-
 
 const HomeTemplate = () => {
   const data = useStaticQuery(graphql`
@@ -61,18 +60,20 @@ const HomeTemplate = () => {
         </Helmet>
 
         <Header logoTxt={siteLogoText} />
-        <canvas/>
+        <canvas />
 
         <SectionWrap>
           <Hero id="hero" />
 
-          <About/>
+          <About />
 
-          <Experience/>
+          <Experience />
 
-          <Projects/>
+          <Projects />
 
-          
+          <div style={{ backgroundColor: "white" }}>
+            <StyledPattern />
+          </div>
         </SectionWrap>
         <Footer />
       </StyledHome>
