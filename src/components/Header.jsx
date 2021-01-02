@@ -65,19 +65,19 @@ const Header = () => {
 
           <NavList>
             <NavItem>
-              <ScrollLink className="small-caps" css={ScrollLinkStyle} to="about" smooth={"easeInOutCubic"}>
+              <ScrollLink className="small-caps" css={ScrollLinkStyle} to="about" smooth={"easeInOutCubic"} offset={-50}>
                 About
               </ScrollLink>
             </NavItem>
 
             <NavItem>
-              <ScrollLink className="small-caps" css={ScrollLinkStyle} to={"work"} smooth={"easeInOutCubic"} offset={-100}>
+              <ScrollLink className="small-caps" css={ScrollLinkStyle} to={"work"} smooth={"easeInOutCubic"} offset={-50}>
                 Experience
               </ScrollLink>
             </NavItem>
 
             <NavItem>
-              <ScrollLink className="small-caps" css={ScrollLinkStyle} to="projects" smooth={"easeInOutCubic"}>
+              <ScrollLink className="small-caps" css={ScrollLinkStyle} to="projects" smooth={"easeInOutCubic"} offset={-50}>
                 Projects
               </ScrollLink>
             </NavItem>

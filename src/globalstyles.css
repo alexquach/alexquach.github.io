@@ -13,6 +13,10 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+p {
+  font-size: 1.25em;
+}
+
 .small-caps {
   letter-spacing: 0.15em;
   font-weight: bold;

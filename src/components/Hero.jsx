@@ -42,7 +42,7 @@ const Hero = ({ imageAlt, id }) => {
           <Typist.Delay ms={100} /> | Entrepreneur
           <Typist.Delay ms={500} />...
         </Typist>
-          <ScrollLink to={"work"} smooth={"easeInOutCubic"} offset={-100}>
+          <ScrollLink to={"about"} smooth={"easeInOutCubic"} offset={-50}>
             <DownArrow />
           </ScrollLink>
         </StyledHeroText>

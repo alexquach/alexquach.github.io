@@ -1,0 +1,41 @@
+.EmoticonList {
+    list-style-type: 'none';
+}
+
+
+li{
+    padding-inline-start: 1ch;
+    font-size: 1.25em;
+}
+
+li.EmoticonListItem + li.EmoticonListItem {
+    margin-top: 10px;
+}
+
+.Wave {
+    list-style-type: '👋';
+}
+
+.Computer{
+    list-style-type: '💻';
+}
+
+.Rocket{
+    list-style-type: '🚀';
+}
+.Sparkles{
+    list-style-type: '✨';
+}
+.Balloon{
+    list-style-type: '🎈';
+}
+.Party{
+    list-style-type: '🎉';
+}
+.Boston{
+    list-style-type: '🌎';
+}
+.Trophy{
+    list-style-type: '🏆';
+}
+
