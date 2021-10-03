@@ -11,7 +11,7 @@ const About = () => {
 
   return (
     <Section
-      backgroundColor={theme.colors.lightgrey}
+      backgroundColor={theme.colors.light}
       id="about"
       light={false}
       enableWave={false}

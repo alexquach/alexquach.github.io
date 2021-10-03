@@ -2,8 +2,6 @@ import styled from "@emotion/styled"
 import { keyframes, css } from "@emotion/core"
 import theme from "../gatsby-plugin-theme-ui"
 
-import pattern from "./pattern.png"
-
 export const StyledHome = styled.div`
   animation: fadeIn ease 2s;
   -webkit-animation: fadeIn ease 2s;
@@ -218,10 +216,10 @@ export const StyledSection = styled.section`
   })}
   &:before {
     content: "";
-    ${({ pattern }) => ({
+    ${({ pattern, opacity }) => ({
     backgroundImage: pattern,
     backgroundSize: "contain",
-    opacity: pattern ? 0.05 : 1,
+    opacity: pattern ? opacity : 1,
     position: "absolute",
     top: "0px",
     right: "0px",

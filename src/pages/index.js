@@ -6,7 +6,7 @@ import '../globalstyles.css'
 
 // markup
 const IndexPage = () => {
-  const [isLoading, setIsLoading] = useState(true);
+  const [isLoading, setIsLoading] = useState(false);
 
   return (
     <div style={{backgroundColor: "black"}}>

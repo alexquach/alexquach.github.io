@@ -11,6 +11,7 @@ const Section = ({
   enableWave,
   waveBottom,
   pattern,
+  opacity,
 }) => {
   return (
     <StyledSection
@@ -18,8 +19,10 @@ const Section = ({
       light={light || false}
       id={id}
       pattern={pattern}
+      opacity={opacity}
     >
-      <Container>{children}</Container>
+      <Container style={{zIndex: 1}}>
+          {children}</Container>
       <AnimatedWave enableWave={enableWave} bottom={waveBottom} />
     </StyledSection>
   )

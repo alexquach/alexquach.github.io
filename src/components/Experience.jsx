@@ -14,6 +14,7 @@ import mitlogo from '../images/mitlogo.png';
 import cogolabslogo from '../images/cogolabslogo.png';
 import hucplogo from '../images/hucplogo.jpg';
 
+import pattern from "../images/about_pattern.png"
 
 const useStyles = makeStyles((theme) => ({
   paper: {
@@ -58,7 +59,12 @@ const Experience = ({
   const classes = useStyles();
 
   return (
-    <Section backgroundColor={theme.colors.light} id="work">
+    <Section 
+      backgroundColor={theme.colors.light}
+      id="work"
+      pattern={`url(${pattern})`}
+      opacity={0.03}
+      >
       <ScrollAnimation animateIn="animate__fadeInUp" duration={1} css={css`text-align: center`}>
         <h1>Experience</h1>
       </ScrollAnimation>
